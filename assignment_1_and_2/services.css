@@ -1,0 +1,30 @@
+/* 1. Base & Header */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font: 16px/1.6 'Noto Sans', sans-serif; background: #f4f7f6; color: #333; }
+h1, h2, h3 { font-family: 'Montserrat', sans-serif; color: #222; }
+#main-header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: #fff; }
+.logo a, .nav-links a { text-decoration: none; }
+.logo h2 { font: 700 24px 'Montserrat', sans-serif; color: #1a1a1a; }
+.nav-links { display: flex; gap: 30px; }
+.nav-links a { font: 700 14px 'Noto Sans', sans-serif; text-transform: uppercase; color: #333; transition: 0.3s; }
+.nav-links a:hover, .nav-links a.active { color: #ff5722; }
+footer { background: #222; color: #fff; text-align: center; padding: 30px; margin-top: 40px; }
+
+/* 2. Services Section & Flexbox Requirement */
+.services-section { padding: 60px 20px; text-align: center; }
+.services-section p { margin-bottom: 40px; color: #666; }
+.card-list { display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 30px; max-width: 1200px; margin: 0 auto; }
+
+/* 3. Card Styling, Transform & Transition Requirement */
+.service-card { background: #fff; width: 320px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.service-card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 15px 25px rgba(0,0,0,0.2); }
+.service-card img { width: 100%; height: 200px; object-fit: cover; }
+.service-card h3 { padding: 20px 20px 10px; }
+.service-card p { padding: 0 20px 20px; color: #666; font-size: 14px; }
+.service-card a { display: inline-block; padding: 0 20px 20px; color: #ff5722; font-weight: 700; text-decoration: none; }
+
+/* 4. Media Query */
+@media (max-width: 768px) {
+    #main-header { flex-direction: column; padding: 15px; gap: 15px; }
+    .nav-links { flex-wrap: wrap; justify-content: center; }
+}
