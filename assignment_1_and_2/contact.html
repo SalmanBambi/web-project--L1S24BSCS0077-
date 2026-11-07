@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Adventure - Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="main-header">
+        <div class="logo"><a href="index.html"><h2>Outdoor Adventure</h2></a></div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="media.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Projects</a>
+            <a href="register.html">Register</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Flexbox Container holding About & Form -->
+    <main class="contact-wrapper">
+        <section class="about-us">
+            <h2>About Our Office</h2>
+            <p>We are located in the heart of the city. Drop by to plan your next hike, or send us a message below.</p>
+            <ul>
+                <li>📍 123 Fifth Avenue, NY 10160</li>
+                <li>📞 800-123-456</li>
+                <li>✉️ contact@outdoor.com</li>
+            </ul>
+        </section>
+
+        <section class="form-section">
+            <h2>Send a Message</h2>
+            <!-- CSS Grid inside Form -->
+            <form id="contactForm">
+                <div class="form-grid">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" class="full-width" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+                <p id="form-msg" class="hidden"></p> <!-- JS will target this -->
+            </form>
+        </section>
+    </main>
+
+    <footer><p>Copyright &copy; 2026 Outdoor Adventure.</p></footer>
+    
+    <!-- Link JS File -->
+    <script src="contact.js"></script>
+</body>
+</html>
